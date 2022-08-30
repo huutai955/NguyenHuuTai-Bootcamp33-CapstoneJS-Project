@@ -33,6 +33,7 @@ export let kiemTraPasswordConfirm = (password) => {
     }
 
     document.getElementById("errorPasswordConfirm").innerHTML = ''
+    return true;
 }
 
 
@@ -44,14 +45,16 @@ export let kiemTraPasswordConfirm = (password) => {
 
 */
 
-export let kiemTraSoDienThoai = (phone)  => {
+export let kiemTraSoDienThoai = (phone) => {
     var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-        if (vnf_regex.test(phone) == false) 
-        {
-           document.getElementById("errorPhone").innerHTML = 'Your phone number is incorrect VietNam phone number format!!';
-        }else{
-            document.getElementById("errorPhone").innerHTML = '';
-        }
+    if (vnf_regex.test(phone) == false) {
+        document.getElementById("errorPhone").innerHTML = 'Your phone number is incorrect VietNam phone number format!!';
+        return false;
+    }
+
+    document.getElementById("errorPhone").innerHTML = '';
+    return true;
+
 };
 
 

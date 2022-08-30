@@ -33,15 +33,15 @@ document.querySelector("#registerForm").onsubmit = (event) => {
         
         
     if (kiemTraRong(email.value, 'errorEmail', 'Email')) {
-        valid = kiemTraEmail(email.value);
+        valid &= kiemTraEmail(email.value);
     }
 
     if (kiemTraRong(passwordConfirm.value, 'errorPasswordConfirm', 'Password confirm')) {
-        valid = kiemTraPasswordConfirm(passwordConfirm.value);
+        valid &= kiemTraPasswordConfirm(passwordConfirm.value);
     }
 
     if (kiemTraRong(phone.value, 'errorPhone', 'Phone')) {
-        valid = kiemTraSoDienThoai(phone.value);
+        valid &= kiemTraSoDienThoai(phone.value);
     }
 
     if (valid == false) {
