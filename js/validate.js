@@ -2,7 +2,7 @@
 export let kiemTraRong = (value, selectError, name) => {
     if (value == '') {
         document.getElementById(selectError).innerHTML =
-            `${name} is not be empty`;
+            `${name} can not be empty`;
         return false;
     }
 
@@ -28,7 +28,7 @@ export let kiemTraPasswordConfirm = (password) => {
     let yourPassword = document.getElementById("password");
 
     if (yourPassword.value != password) {
-        document.getElementById("errorPasswordConfirm").innerHTML = 'Your password is incorrect'
+        document.getElementById("errorPasswordConfirm").innerHTML = 'Your password confirm is incorrect'
         return false;
     }
 

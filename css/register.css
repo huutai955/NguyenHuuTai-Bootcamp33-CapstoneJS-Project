@@ -234,4 +234,9 @@
   padding: 8px 45px;
   margin-left: 54%;
   margin-top: 80px;
+  transition: 0.5s;
+}
+.register .container .form button:hover {
+  -webkit-box-shadow: -2px 6px 15px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: -2px 6px 15px 1px rgba(0, 0, 0, 0.8);
 }

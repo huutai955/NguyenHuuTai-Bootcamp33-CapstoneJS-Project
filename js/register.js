@@ -28,7 +28,7 @@ document.querySelector("#registerForm").onsubmit = (event) => {
     valid = kiemTraRong(email.value, 'errorEmail', 'Email')
         & kiemTraRong(name.value, 'errorName', 'Name')
         & kiemTraRong(password.value, 'errorPassword', 'Password')
-        & kiemTraRong(phone.value, 'errorPhone', 'Phone')
+        & kiemTraRong(phone.value, 'errorPhone', 'Phone Number')
         & kiemTraRong(passwordConfirm.value, 'errorPasswordConfirm', 'Password confirm')
         & kiemTraRong(gender.value, 'errorPasswordConfirm', 'Password confirm')
         
@@ -77,13 +77,4 @@ document.querySelector("#registerForm").onsubmit = (event) => {
     
 
 }
-
-
-// let createUser = () => {
-  
-//     userList.push(user);
-//     console.log(userList);
-// }
-
-
 
