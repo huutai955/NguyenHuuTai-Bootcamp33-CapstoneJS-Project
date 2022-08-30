@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+
+// Helper
+@import '../Helper/varandmixin.scss';
+
+
+// Vendors
+
+
+// Base
+
+
+// Components
+
+// Layouts
+@import '../Layouts/header.scss';
+@import '../Layouts/footer.scss';
+
+
+// Pages
+@import '../Pages/menu.scss';
+@import '../Pages/product.scss';
+
+
+
+.detail {
+    padding-top: 60px;
+    .container {
+        display: flex;
+        .detail__img {
+            width: 30%;
+            margin-left: 65px;
+            padding: 109px 57px 90px 57px;
+            background-color: $bg-c3;
+            img {
+                width: 100%;
+            }
+        }
+
+        .detail__info {
+            width: 70%;
+            padding-left: 128px;
+            padding-right: 250px;
+            h2 {
+                color: $text-c2-color;
+                font-size: 30px;
+                font-weight: $text-fw-300;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: $text-c6-color;
+                font-size: $text-xs;
+                font-weight: $text-fw-400;
+                margin-bottom: 10px;
+            }
+
+            h4 {
+                color: $text-c7-color;
+                font-size: $text-l;
+                font-weight: $text-fw-600;
+                margin-bottom: 15px;
+            }
+
+            .size {
+                display: flex;
+                margin-bottom: 15px;
+                span {
+                    font-size: $text-l;
+                    color: $text-c2-color;
+                    font-weight: $text-fw-600;
+                    background-color: $bg-c6;
+                    padding: 10px;
+                    margin-right: 22px;
+                }
+            }
+
+            span {
+                color: $text-c5-color;
+                font-size: 30px;
+                font-weight: $text-fw-600;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+
+            .amount {
+                display: flex;
+                margin-bottom: 10px;
+                button {
+                    background: $bg-c7 !important;
+                    padding: 5px 15px;
+                    color: $text-c1-color;
+                    font-weight: $text-fw-600;
+                    font-size: $text-l;
+                    border: none;
+                    cursor: pointer;
+                    margin-right: 22px;
+                }
+
+                span {
+                    margin-right: 22px;
+                }
+            }
+
+            button {
+                @include buttonForm;
+                background: $bg-c8;
+            }
+
+        }
+    }
+}
+

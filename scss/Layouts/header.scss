@@ -1,0 +1,42 @@
+.header {
+    background-color: #000000;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 116px;
+            height: 32px;
+        }
+
+        .header__nav {
+            display: flex;
+
+            span {
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 50px;
+                color: $text-c1-color;
+
+                img {
+                    width: 31px;
+                    height: 31px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                @include atag();
+                padding: 15px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $text-c5-color;
+                }
+            }
+        }
+    }
+}
+

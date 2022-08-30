@@ -1,0 +1,24 @@
+// Menu
+.menu {
+    background-color: $bg-c1;
+
+    .container {
+        ul {
+            display: flex;
+
+            li {
+                padding: 13px;
+                list-style: none;
+
+                a {
+                    @include atag($text-c2-color, $text-s, $text-fw-400);
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover {
+                        color: $text-c5-color;
+                    }
+                }
+            }
+        }
+    }
+}

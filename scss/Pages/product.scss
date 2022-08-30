@@ -1,0 +1,101 @@
+// Product
+.product {
+    padding-top: 45px;
+    padding-bottom: 100px;
+
+    .container {
+        h2 {
+            color: $text-c2-color;
+            font-size: $text-xl;
+            font-weight: $text-fw-400;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+            .product__col {
+                width: calc(100%/3);
+                padding: 30px;
+                display: flex;
+
+                .product__item {
+                    background-color: $bg-c3;
+                    transition: 0.5s;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    &:hover {
+                        -webkit-box-shadow: -1px 7px 14px 8px rgba(0, 0, 0, 0.66);
+                        box-shadow: -1px 7px 14px 8px rgba(0, 0, 0, 0.66);
+                    }
+
+                    .img {
+                        padding: 45px 57px;
+                        overflow: hidden;
+
+
+                        img {
+                            width: 100%;
+                            transition: 0.5s;
+                            cursor: pointer;
+
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+
+                    .detail {
+                        padding: 20px;
+
+                        h3 {
+                            color: $text-c2-color;
+                            font-size: $text-l;
+                            font-weight: $text-fw-300;
+                            margin-bottom: 10px;
+                        }
+
+                        p {
+                            color: $text-c4-color;
+                            font-size: $text-s;
+                            font-weight: $text-fw-300;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .buy {
+                        display: flex;
+
+                        button {
+                            width: 50%;
+                            @include buttonForm();
+                            padding: 15px 45px;
+
+                            a {
+                                color: $text-c2-color;
+                                text-decoration: none;
+                            }
+                        }
+
+                        span {
+                            width: 50%;
+                            padding: 15px 48px;
+                            color: $text-c2-color;
+                            font-size: $text-l;
+                            font-weight: $text-fw-600;
+                            background-color: $bg-c4;
+                            text-align: right;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

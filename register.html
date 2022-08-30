@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link for googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link for fonticon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link for css -->
+    <link rel="stylesheet" href="./css/register.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="./img/image 3.png" alt="">
+            <div class="header__nav">
+                <span><img src="./img/image 8.png" alt="">
+                    (1)</span>
+                <a href="">Login</a>
+                <a href="./register.html">Register</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="menu">
+        <div class="container">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">Men</a></li>
+                <li><a href="">Woman</a></li>
+                <li><a href="">Kid</a></li>
+                <li><a href="">Sport</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="register">
+        <div class="container">
+            <h2>Register</h2>
+
+            <form class="form" id="registerForm">
+                <div class="input__form">
+                    <input id="email" type="text" placeholder="email">
+                    <span id="errorEmail"></span>
+                </div>
+                <div class="input__form">
+                    <input id="name" type="text" placeholder="name">
+                    <span id="errorName"></span>
+                </div>
+                <div class="input__form">
+                    <input id="password" type="password" placeholder="password">
+                    <span id="errorPassword"></span>
+                </div>
+
+                <div class="input__form">
+                    <input id="phone" type="text" placeholder="phone">
+                    <span id="errorPhone"></span>
+                </div>
+
+                <div class="input__form">
+                    <input id="passwordConfirm"  type="password" placeholder="password confirm">
+                    <span id="errorPasswordConfirm"></span>
+                </div>
+
+                <div class="radio__form">
+                    Gender<input id="gender" type="radio" name="gender" value="true" checked>
+                    Female<input type="radio" name="gender" value="false">
+                </div>
+
+                    <button id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="top">
+                <div class="left">
+                    <h3>GET HELP</h3>
+                    <a href="">Contact us</a>
+                    <a href="">Shopping</a>
+                    <a href="">NikeID</a>
+                    <a href="">Nike+</a>
+                </div>
+                <div class="mid">
+                    <h3>ORDERS</h3>
+                    <a href="">Payment options</a>
+                    <a href="">Shipping and delivery</a>
+                    <a href="">Returns</a>
+                </div>
+                <div class="right">
+                    <h3>Register</h3>
+                    <p>Create one account to manage everything you do with Nike, from your shopping preferences
+                        to your Nike+ activity.</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <footer class="footer2">
+        <div class="container">
+            <div class="bottom">
+                <div class="left">
+                    <h3>EMAIL SIGN UP</h3>
+                    <p>Be the first to know about new products and special offers</p>
+                    <a href="">Sign up now</a>
+                </div>
+                <div class="mid">
+                    <h3>GET CARDS</h3>
+                    <p>Give the gift that always fits</p>
+                    <a href="">View cards</a>
+                </div>
+                <div class="right">
+                    <h3>STORES NEAR YOU</h3>
+                    <p>Locate a Nike retail store or authorized retail</p>
+                    <a href="">Seach</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+    integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./js/register.js"></script>
+</body>
+
+</html>
