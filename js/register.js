@@ -30,19 +30,18 @@ document.querySelector("#registerForm").onsubmit = (event) => {
         & kiemTraRong(password.value, 'errorPassword', 'Password')
         & kiemTraRong(phone.value, 'errorPhone', 'Phone Number')
         & kiemTraRong(passwordConfirm.value, 'errorPasswordConfirm', 'Password confirm')
-        & kiemTraRong(gender.value, 'errorPasswordConfirm', 'Password confirm')
         
         
     if (kiemTraRong(email.value, 'errorEmail', 'Email')) {
-        kiemTraEmail(email.value);
+        valid = kiemTraEmail(email.value);
     }
 
     if (kiemTraRong(passwordConfirm.value, 'errorPasswordConfirm', 'Password confirm')) {
-        kiemTraPasswordConfirm(passwordConfirm.value);
+        valid = kiemTraPasswordConfirm(passwordConfirm.value);
     }
 
     if (kiemTraRong(phone.value, 'errorPhone', 'Phone')) {
-        kiemTraSoDienThoai(phone.value);
+        valid = kiemTraSoDienThoai(phone.value);
     }
 
     if (valid == false) {
