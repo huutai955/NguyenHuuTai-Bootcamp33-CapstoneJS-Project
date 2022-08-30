@@ -76,6 +76,11 @@
                             width: 50%;
                             @include buttonForm();
                             padding: 15px 45px;
+                            transition: 0.5s;
+
+                            &:hover {
+                                background-color: $bg-c9;
+                            }
 
                             a {
                                 color: $text-c2-color;

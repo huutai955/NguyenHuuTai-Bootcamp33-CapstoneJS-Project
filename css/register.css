@@ -168,92 +168,10 @@
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
-}
-
-.product {
-  padding-top: 45px;
-  padding-bottom: 100px;
-}
-.product .container h2 {
-  color: #000000;
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-}
-.product .container .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.product .container .row .product__col {
-  width: 33.3333333333%;
-  padding: 30px;
-  display: flex;
-}
-.product .container .row .product__col .product__item {
-  background-color: #F8F8F8;
   transition: 0.5s;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
-.product .container .row .product__col .product__item:hover {
-  -webkit-box-shadow: -1px 7px 14px 8px rgba(0, 0, 0, 0.66);
-  box-shadow: -1px 7px 14px 8px rgba(0, 0, 0, 0.66);
-}
-.product .container .row .product__col .product__item .img {
-  padding: 45px 57px;
-  overflow: hidden;
-}
-.product .container .row .product__col .product__item .img img {
-  width: 100%;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.product .container .row .product__col .product__item .img img:hover {
-  transform: scale(1.2);
-}
-.product .container .row .product__col .product__item .detail {
-  padding: 20px;
-}
-.product .container .row .product__col .product__item .detail h3 {
-  color: #000000;
-  font-size: 24px;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-.product .container .row .product__col .product__item .detail p {
-  color: #CBC9C9;
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 15px;
-}
-.product .container .row .product__col .product__item .buy {
-  display: flex;
-}
-.product .container .row .product__col .product__item .buy button {
-  width: 50%;
-  color: #ffffff;
-  background-color: #F8B653;
-  font-size: 20px;
-  border: none;
-  padding: 15px 48px;
-  cursor: pointer;
-  padding: 15px 45px;
-}
-.product .container .row .product__col .product__item .buy button a {
-  color: #000000;
-  text-decoration: none;
-}
-.product .container .row .product__col .product__item .buy span {
-  width: 50%;
-  padding: 15px 48px;
-  color: #000000;
-  font-size: 24px;
-  font-weight: 600;
-  background-color: #DEDDDC;
-  text-align: right;
+.menu .container ul li a:hover {
+  color: red;
 }
 
 .register {

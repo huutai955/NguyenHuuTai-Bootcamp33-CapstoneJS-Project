@@ -168,6 +168,10 @@
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
+  transition: 0.5s;
+}
+.menu .container ul li a:hover {
+  color: red;
 }
 
 .product {
@@ -241,6 +245,10 @@
   padding: 15px 48px;
   cursor: pointer;
   padding: 15px 45px;
+  transition: 0.5s;
+}
+.product .container .row .product__col .product__item .buy button:hover {
+  background-color: red;
 }
 .product .container .row .product__col .product__item .buy button a {
   color: #000000;
